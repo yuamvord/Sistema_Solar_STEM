@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header{
+    background-color: #0C1852;
+    color: #fff;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.logo{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.logo img{
+    width: 4rem;
+}
+
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.navegacion ul{
+    display: flex;
+    gap: 4rem;
+}
+
+.navegacion li{
+    list-style: none;
+}
+
+/* 2 parte del header*/
+
+.contenedor-header{
+    display: flex;
+    max-width: 140rem;
+    margin: 0 auto;
+    align-items: center;
+    padding: 4rem;
+    padding-bottom: 9rem;
+}
+
+.contenido-header h1{
+    font-weight: 800;
+    font-size: 4.5rem;
+}
+
+.contenido-header p{
+    padding-right: 8rem;
+    color: #d4ced4;
+    line-height: 1.7;
+}
+
+.botones-header {
+    margin-top: 4rem;
+    display: flex;    /* pone los li en fila */
+    gap: 1.5rem;      /* separación entre botones */
+    list-style: none; /* quita viñetas */
+    padding: 0;       /* quita padding por defecto */
+}
+
+.botones-header a {
+    display: inline-block;
+    padding: 1.3rem 2rem;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.botones-header li:first-child a {
+    background-color: #4D298A;
+    color: #fff;
+}
+
+.botones-header li:last-child a {
+    background-color: #f5f5f5;
+    color: #404040;
+}
+
+.contenedor-header img{
+    width: 100%;
+}
+
+/* Main */
+
+main{
+    border: 1px solid transparent;
+    background-color: #1e293b;
+    color: #d4d4d4;
+}
+
+.seccion-principal{
+    margin: 0 auto;
+    max-width: 90rem;
+    padding: 8rem 0;
+}
+
+.seccion-principal h2, 
+.seccion-principal p {
+    text-align: center;
+}
+
+.seccion-principal > h2{
+    font-weight: 700;
+    font-size: 2.6rem;
+
+    color: #f5f5f5;
+}
+
+.parrafo-titulo{
+    margin-bottom: 8rem;
+}
+
+.contenedor-articulos{
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo{
+    border-bottom: 2px solid #525252;
+    padding: 4.8rem 0;
+}
+
+.articulo:nth-child(5){
+    border-bottom: none;
+    margin-bottom: 2rem;
+}
+
+/* Spans o Categorias */
+
+.etiqueta{
+    background-color: #334155;
+    color: #d4d4d4;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+}
+
+.span-lectura{
+    color: #a3a3a3;
+    font-size: 1.5rem;
+}
+
+/* Contenido del articulo */
+
+.articulo h2{
+    text-align: left;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.articulo h2 a{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.articulo p{
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+.mas-informacion{
+    display: flex;
+    justify-content: space-between;
+}
+
+.articulo a{
+    text-decoration: none;
+    color: #4D298A;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/* Boton ver todos */
+
+.contenedor-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-ver-todos{
+    text-decoration: none;
+    color: #fff;
+    background-color: #4D298A;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+
+.btn-ver-todos:hover{
+    background-color: #311259;
+}
+
+/* footer */
+
+
