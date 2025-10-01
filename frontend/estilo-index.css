@@ -233,4 +233,48 @@ main{
 
 /* footer */
 
+footer{
+    background-color: #0C1852;
+    border: 1px solid transparent;
+}
 
+.contenedor-footer{
+    color: #fff;
+    max-width: 130rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 10rem 1 rem;
+    justify-content: space-between;
+}
+
+.contenedor-footer ul{
+    padding: 0;
+}
+
+.contenedor-footer li{
+    list-style: none;
+}
+
+.contenedor-footer a{
+    text-decoration: none;
+    color: #d4d4d4;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.contenedor-footer a:hover{
+    color: #fff;
+}
+
+.contenedor-footer-2{
+    background-color: #1e293b;
+    color: #a3a3a3;
+    padding: 1.5rem 0;
+}
+
+.footer-final{
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
