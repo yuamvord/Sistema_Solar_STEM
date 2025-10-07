@@ -1,13 +1,3 @@
-/* Fondo de Página */
-body {
-  margin: 0;
-  background-image: url(img/estrellitas.png);
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  overflow: hidden;
-}
-
 /* Botón Desplegable */
 .hamburger {
   position: fixed;
@@ -48,7 +38,7 @@ body {
   right: -250px; /* Oculto inicialmente */
   width: 250px;
   height: 100%;
-  background-color: rgba(0,0,0,0.9);
+  background-color: #111;
   transition: right 0.3s ease;
   z-index: 100;
   padding-top: 60px;
@@ -168,3 +158,181 @@ h1 {
 .saturn  { width: 20px; height: 20px; background-color: #f5deb3; box-shadow: 0 0 0 3px rgba(255,255,255,0.2); }
 .uranus  { width: 18px; height: 18px; background-color: #7fffd4; }
 .neptune { width: 18px; height: 18px; background-color: #4169e1; }
+
+:root{
+  --left-width:50vw;
+  --carousel-width:calc(var(--left-width) - 40px);
+  --carousel-height:60vh;
+  --box-height:80px;
+  --gap:12px;
+  --accent:#7dd3fc;
+}
+
+*{box-sizing:border-box}
+html,body{
+  height:100%;
+  margin:0;
+  font-family:Arial, sans-serif;
+  background-image: url(img/estrellitas.png);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Mitad izquierda */
+.left-half{
+  position:fixed;
+  left:0; top:0;
+  width:var(--left-width);
+  height:100vh;
+  display:flex;
+  align-items:center;        
+  justify-content:center;
+  padding-left:20px;
+}
+
+/* Carrusel */
+.carousel-viewport{
+  width:var(--carousel-width);
+  height:var(--carousel-height);
+  border-radius:12px;
+  background:rgba(0,0,0,0.4); /* ligeramente transparente */
+  box-shadow:0 8px 30px rgba(2,6,23,.6);
+  overflow:hidden;             
+  position:relative;
+  padding:16px;
+}
+
+/* Lista de planetas */
+.carousel-list{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:var(--gap);
+  transition:transform .12s linear;
+  will-change:transform;
+}
+
+/* Planetas */
+.planet-box{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  height:var(--box-height);
+  padding:10px 12px;
+  border-radius:10px;
+  background:rgba(255,255,255,0.02);
+  cursor:pointer;
+  transition:transform .25s ease, box-shadow .25s ease, background .18s ease;
+  border:1px solid rgba(255,255,255,0.02);
+}
+.planet-box:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 30px rgba(2,6,23,.35);
+  background:rgba(255,255,255,0.03);
+}
+
+.thumb{
+  width:56px;height:56px;
+  border-radius:50%;
+  flex:0 0 56px;
+  display:grid;place-items:center;
+  background:#fff8;
+  color:#111;
+  font-weight:700;
+  overflow:hidden;
+}
+.thumb img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.info{flex:1;min-width:0}
+.title{font-size:15px;font-weight:700}
+.brief{font-size:13px;opacity:.9;margin-top:6px}
+.vermas{font-weight:600;color:var(--accent)}
+
+/* Panel detalle */
+.detail-panel{
+  position:absolute; /* dentro del carrusel */
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,0.85);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  transform:scale(.95);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .35s ease, transform .35s ease;
+  overflow:auto; /* scroll interno solo del panel */
+  border-radius:12px;
+  padding:20px;
+  z-index:10;
+}
+
+.detail-panel.show{
+  opacity:1;
+  transform:scale(1);
+  pointer-events:auto;
+}
+
+.big-img{
+  width:160px;height:160px;
+  border-radius:999px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,0.05);
+  overflow:hidden;
+  margin-bottom:18px;
+}
+.big-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.detail-title{
+  font-size:24px;
+  font-weight:800;
+  margin-bottom:14px;
+}
+
+.detail-text{
+  font-size:16px;
+  line-height:1.7;
+  max-width:90%;
+  margin:0 auto;
+  color:#e6eef6;
+  overflow-wrap:break-word;
+}
+
+/* Botón cerrar */
+.close-btn{
+  position:absolute;
+  right:18px;top:18px;
+  background:var(--accent);
+  border:none;
+  color:#111;
+  font-size:15px;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:background .25s ease, color .25s ease;
+  z-index:20;
+}
+.close-btn:hover{
+  background:#38bdf8;
+  color:#fff;
+}
+
+/* Responsive */
+@media (max-width:900px){
+  :root{--left-width:100vw}
+  .carousel-viewport{height:50vh;width:calc(100vw - 40px)}
+}

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sistema Solar Interactivo</title>
   <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
 <h1>Interfaz | Sistema Solar</h1>
@@ -60,6 +61,27 @@
       <div class="planet neptune"></div>
     </div>
   </div>
+
+<div class="left-half">
+  <div class="carousel-viewport" id="carousel">
+    <div class="carousel-list" id="list">
+      <!-- Elementos generados por JS -->
+    </div>
+
+    <!-- Panel de detalle -->
+    <div class="detail-panel" id="detail">
+      <button class="close-btn" id="close">Cerrar ✕</button>
+      <div class="detail-left">
+        <div class="big-img" id="detail-img">☀</div>
+        <div class="detail-title" id="detail-title">Título</div>
+      </div>
+      <div class="detail-right">
+        <div class="detail-text" id="detail-text">Contenido extenso...</div>
+      </div>
+    </div>
+  </div>
+</div>
+  
   <script src="funciones.js"></script>
 </body>
 </html>
