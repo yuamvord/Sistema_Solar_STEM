@@ -23,6 +23,7 @@ const items = [
   {id:'saturno', title:'Saturno', brief:'Sus anillos icónicos — ver más...', text:`Saturno es conocido por sus espectaculares anillos...`, img:'img/saturno.png'},
   {id:'urano', title:'Urano', brief:'Gigante helado — ver más...', text:`Urano tiene una inclinación axial extrema...`, img:'img/urano.png'},
   {id:'neptuno', title:'Neptuno', brief:'Vientos extremos — ver más...', text:`Neptuno es el planeta más lejano...`, img:'img/neptuno.png'},
+  {id:'pluton', title:'Pluton', brief:'El planeta enano más grande — ver más...', text:`Plutón es`, img:'img/pluton.png'},
 ];
 
 // DOM refs
@@ -125,10 +126,20 @@ function showDetail(item){
     detailImg.textContent = item.title[0];
   }
 
+  detailEl.scrollTop = 0;
   detailEl.classList.add('show');
-  // Bloquear scroll global y del carrusel
+
+  // Bloquear scroll global y del carrusel mientras el panel esté abierto
   document.body.style.overflow = 'hidden';
-  carouselViewport.style.overflow = 'hidden';
+  carouselViewport.style.overflowY = 'hidden';
+}
+
+function closeDetail(){
+  detailEl.classList.remove('show');
+
+  // Restaurar scroll y selección del carrusel
+  document.body.style.overflow = '';
+  carouselViewport.style.overflowY = autoScroll ? 'hidden' : 'auto';
 }
 
 // Cerrar detalle
@@ -160,3 +171,4 @@ document.addEventListener('click', (e) => {
 // Init
 renderLoopList();
 animateLoop();
+
