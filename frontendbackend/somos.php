@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Quiénes somos? - Sistema Solar Interactivo</title>
+  <link rel="stylesheet" href="estilo-somos.css" />
+</head>
+<body>
+  <div class="about-container">
+    <h1>¿Quiénes somos?</h1>
+    <p>
+      Somos un grupo de 5 estudiantes universitarios de la <strong>Universidad Mariano Gálvez</strong>,
+      desarrollando este proyecto como parte del <strong>proyecto final</strong> del curso de <strong>Algoritmos</strong>.
+      Nuestro objetivo es aplicar nuestros conocimientos en programación y diseño web para crear
+      una experiencia interactiva que combine tecnología y educación sobre el sistema solar.
+    </p>
+
+    <!-- Bloque de Integrantes -->
+    <div class="team-grid">
+      <!-- Integrante 1 -->
+      <div class="team-member">
+        <img src="img/yuamFoto.jpg" alt="Yuam">
+        <h3>Ariel Yuam Vides Ordoñez</h3>
+        <p>Programador - Backend / Programación y estructura del trabajo y código backend</p>
+      </div>
+      <!-- Integrante 2 -->
+      <div class="team-member">
+        <img src="img/foto José Real.png" alt="José Real">
+        <h3>José Daniel Real García</h3>
+        <p>Programador - Frontend / Descripción breve</p>
+      </div>
+      <!-- Integrante 3 -->
+      <div class="team-member">
+        <img src="img/foto José A.png" alt="José A">
+        <h3>José Miguel Argueta Ortíz</h3>
+        <p>Documentador / Descripción breve</p>
+      </div>
+      <!-- Integrante 4 -->
+      <div class="team-member">
+        <img src="img/foto Adrian.png" alt="Adrian">
+        <h3>Rodrigo Adrian Barrios Monterroso</h3>
+        <p>Diseñador / Descripción breve</p>
+      </div>
+      <!-- Integrante 5 -->
+      <div class="team-member">
+        <img src="img/foto Farfan.png" alt="Farfan">
+        <h3>Moisés Abinadí Farfan González</h3>
+        <p>Electrisita / Descripción breve</p>
+      </div>
+    </div>
+
+    <a class="back-link" href="Interfaz.html">← Volver al Interfaz | Sistema Solar</a>
+  </div>
+</body>
+</html>
