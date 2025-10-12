@@ -1,0 +1,7 @@
+var class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_trust_products_1_1_read_trust_products_channel_endpoint_assignment_options =
+[
+    [ "__construct", "class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_trust_products_1_1_read_trust_products_channel_endpoint_assignment_options.html#a78d57bfe45493bb51b29d059a84bbaaf", null ],
+    [ "__toString", "class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_trust_products_1_1_read_trust_products_channel_endpoint_assignment_options.html#ac7561fa363e7d8a195501865fdafabdf", null ],
+    [ "setChannelEndpointSid", "class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_trust_products_1_1_read_trust_products_channel_endpoint_assignment_options.html#a844d105dc482da873be8da3df4c02847", null ],
+    [ "setChannelEndpointSids", "class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_trust_products_1_1_read_trust_products_channel_endpoint_assignment_options.html#a1f3ad38500c74a41ffeb4a0aacfd1131", null ]
+];

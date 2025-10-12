@@ -1,0 +1,6 @@
+var class_twilio_1_1_rest_1_1_flex_api_1_1_v1_1_1_interaction_1_1_interaction_channel_1_1_interaction_channel_invite_instance =
+[
+    [ "__construct", "class_twilio_1_1_rest_1_1_flex_api_1_1_v1_1_1_interaction_1_1_interaction_channel_1_1_interaction_channel_invite_instance.html#a717f388758dd0a7e6efa4381b027f84e", null ],
+    [ "__get", "class_twilio_1_1_rest_1_1_flex_api_1_1_v1_1_1_interaction_1_1_interaction_channel_1_1_interaction_channel_invite_instance.html#a058d17a11017e0e346ad992e816b8537", null ],
+    [ "__toString", "class_twilio_1_1_rest_1_1_flex_api_1_1_v1_1_1_interaction_1_1_interaction_channel_1_1_interaction_channel_invite_instance.html#a8907a7434e16f78e90ef8b0de4f61b10", null ]
+];

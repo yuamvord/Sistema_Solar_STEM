@@ -1,0 +1,10 @@
+var class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_fetch_task_queue_cumulative_statistics_options =
+[
+    [ "__construct", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_fetch_task_queue_cumulative_statistics_options.html#ae5cfec4af4b4b46043466a1090b9b465", null ],
+    [ "__toString", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_fetch_task_queue_cumulative_statistics_options.html#a0d592cbe6a25b346dee1b74a8dcc1ae9", null ],
+    [ "setEndDate", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_fetch_task_queue_cumulative_statistics_options.html#ab29cb21d3013c703e05eeea5e8ac51ab", null ],
+    [ "setMinutes", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_fetch_task_queue_cumulative_statistics_options.html#aa96fecc454bd198f19c19b11d05c51a9", null ],
+    [ "setSplitByWaitTime", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_fetch_task_queue_cumulative_statistics_options.html#ac110189e7604fe53abf8bf6a8765cf90", null ],
+    [ "setStartDate", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_fetch_task_queue_cumulative_statistics_options.html#ada35b3cbb30625ef92a4abcd79ee1100", null ],
+    [ "setTaskChannel", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_fetch_task_queue_cumulative_statistics_options.html#a0e696f8c5e4f04ca4e28af082ca17de3", null ]
+];

@@ -1,0 +1,6 @@
+var class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_task_queue_bulk_real_time_statistics_list =
+[
+    [ "__construct", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_task_queue_bulk_real_time_statistics_list.html#a3e2703d9bd7cddf973fa8c4bf2234a55", null ],
+    [ "__toString", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_task_queue_bulk_real_time_statistics_list.html#a06267f784e32c695b7da23fe4c3b2b37", null ],
+    [ "create", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_task_queue_1_1_task_queue_bulk_real_time_statistics_list.html#a33523d4210b9e0dc57ec9ecdcf60a506", null ]
+];

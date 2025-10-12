@@ -1,0 +1,8 @@
+var namespace_twilio_1_1_rest_1_1_verify_1_1_v2_1_1_service_1_1_entity_1_1_challenge =
+[
+    [ "CreateNotificationOptions", "class_twilio_1_1_rest_1_1_verify_1_1_v2_1_1_service_1_1_entity_1_1_challenge_1_1_create_notification_options.html", "class_twilio_1_1_rest_1_1_verify_1_1_v2_1_1_service_1_1_entity_1_1_challenge_1_1_create_notification_options" ],
+    [ "NotificationInstance", "class_twilio_1_1_rest_1_1_verify_1_1_v2_1_1_service_1_1_entity_1_1_challenge_1_1_notification_instance.html", "class_twilio_1_1_rest_1_1_verify_1_1_v2_1_1_service_1_1_entity_1_1_challenge_1_1_notification_instance" ],
+    [ "NotificationList", "class_twilio_1_1_rest_1_1_verify_1_1_v2_1_1_service_1_1_entity_1_1_challenge_1_1_notification_list.html", "class_twilio_1_1_rest_1_1_verify_1_1_v2_1_1_service_1_1_entity_1_1_challenge_1_1_notification_list" ],
+    [ "NotificationOptions", "class_twilio_1_1_rest_1_1_verify_1_1_v2_1_1_service_1_1_entity_1_1_challenge_1_1_notification_options.html", null ],
+    [ "NotificationPage", "class_twilio_1_1_rest_1_1_verify_1_1_v2_1_1_service_1_1_entity_1_1_challenge_1_1_notification_page.html", "class_twilio_1_1_rest_1_1_verify_1_1_v2_1_1_service_1_1_entity_1_1_challenge_1_1_notification_page" ]
+];

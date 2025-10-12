@@ -1,0 +1,10 @@
+var class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_workflow_1_1_fetch_workflow_cumulative_statistics_options =
+[
+    [ "__construct", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_workflow_1_1_fetch_workflow_cumulative_statistics_options.html#aef6ccf4b97926cfd27d0c94c4e982ce9", null ],
+    [ "__toString", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_workflow_1_1_fetch_workflow_cumulative_statistics_options.html#a468958130e7ee36e557210be7d2bf05a", null ],
+    [ "setEndDate", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_workflow_1_1_fetch_workflow_cumulative_statistics_options.html#a8d7a9066907c1a066293e7996b141cb8", null ],
+    [ "setMinutes", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_workflow_1_1_fetch_workflow_cumulative_statistics_options.html#a9265edd58f7e5c73dafb48b4aee2dee2", null ],
+    [ "setSplitByWaitTime", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_workflow_1_1_fetch_workflow_cumulative_statistics_options.html#a2fb75d554479b7d63912c199093a7cd1", null ],
+    [ "setStartDate", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_workflow_1_1_fetch_workflow_cumulative_statistics_options.html#a841f8b5daed4c957e0fa181a02e96985", null ],
+    [ "setTaskChannel", "class_twilio_1_1_rest_1_1_taskrouter_1_1_v1_1_1_workspace_1_1_workflow_1_1_fetch_workflow_cumulative_statistics_options.html#a09083d66e679277fb5a58272379d4f6b", null ]
+];

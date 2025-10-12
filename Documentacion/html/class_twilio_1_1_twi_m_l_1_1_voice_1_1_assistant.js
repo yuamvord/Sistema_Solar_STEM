@@ -1,0 +1,27 @@
+var class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant =
+[
+    [ "__construct", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#aa1003edb2a3e635c412468812bd2feb0", null ],
+    [ "language", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a287f89c42c371e7715b675c794fbe885", null ],
+    [ "parameter", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#abcfa5e44c4aad534eadfa3d43e0a07e8", null ],
+    [ "setDebug", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a1d5d583fb47dd6c08c3a5e9aa6f14bc6", null ],
+    [ "setDtmfDetection", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#abf7cfd1a9e9afafacc07266997c24dd3", null ],
+    [ "setElevenlabsTextNormalization", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a8eaa495f99c35f5eea5124caf8a12650", null ],
+    [ "setHints", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a5648ab81a5cab6e62a7d8278932ff57a", null ],
+    [ "setId", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#ac7906634f803b634f0fb1fc0fd9f88b3", null ],
+    [ "setIntelligenceService", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#aab074f237417723790f8a371a7cadce5", null ],
+    [ "setInterruptible", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a3148f85036dddb586d975cef4fe5c9fd", null ],
+    [ "setInterruptSensitivity", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#ab1474b6036ca955a808dd070350fd661", null ],
+    [ "setLanguage", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a1f4f9f5961bd40be35d2b3a21c1b76b5", null ],
+    [ "setPartialPrompts", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#ae88d9fd029c49c73c25f9acb1ef0c46d", null ],
+    [ "setPreemptible", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a86452c91fe5493a2af34c8dd3d62a513", null ],
+    [ "setProfanityFilter", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#aea3fd3b17a15b9b0c4aaba708d9502c8", null ],
+    [ "setReportInputDuringAgentSpeech", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#ae50d869d17eafa8556cff3adcdcdd684", null ],
+    [ "setSpeechModel", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#adf9ccc7ac7d99140ea5f256cefa805e2", null ],
+    [ "setTranscriptionLanguage", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#ae5c42a0c5201f15057b760bb032e6561", null ],
+    [ "setTranscriptionProvider", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a599b523318e48bdb41912c2ccc97107c", null ],
+    [ "setTtsLanguage", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a40987cc0872223c1c6f810f595be933f", null ],
+    [ "setTtsProvider", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#ae918dc25a4a66ffec32aa651be91f1c6", null ],
+    [ "setVoice", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a9fd465ddd9c8222fee44189558da4f4b", null ],
+    [ "setWelcomeGreeting", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#a1ca514b74057017fef041d4ef7f2cb1f", null ],
+    [ "setWelcomeGreetingInterruptible", "class_twilio_1_1_twi_m_l_1_1_voice_1_1_assistant.html#adb6a0048a412067d2e1c0c243513da11", null ]
+];

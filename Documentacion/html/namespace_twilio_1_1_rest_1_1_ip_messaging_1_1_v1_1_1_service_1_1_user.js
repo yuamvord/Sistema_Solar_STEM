@@ -1,0 +1,6 @@
+var namespace_twilio_1_1_rest_1_1_ip_messaging_1_1_v1_1_1_service_1_1_user =
+[
+    [ "UserChannelInstance", "class_twilio_1_1_rest_1_1_ip_messaging_1_1_v1_1_1_service_1_1_user_1_1_user_channel_instance.html", "class_twilio_1_1_rest_1_1_ip_messaging_1_1_v1_1_1_service_1_1_user_1_1_user_channel_instance" ],
+    [ "UserChannelList", "class_twilio_1_1_rest_1_1_ip_messaging_1_1_v1_1_1_service_1_1_user_1_1_user_channel_list.html", "class_twilio_1_1_rest_1_1_ip_messaging_1_1_v1_1_1_service_1_1_user_1_1_user_channel_list" ],
+    [ "UserChannelPage", "class_twilio_1_1_rest_1_1_ip_messaging_1_1_v1_1_1_service_1_1_user_1_1_user_channel_page.html", "class_twilio_1_1_rest_1_1_ip_messaging_1_1_v1_1_1_service_1_1_user_1_1_user_channel_page" ]
+];

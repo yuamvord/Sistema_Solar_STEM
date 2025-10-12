@@ -1,0 +1,7 @@
+var namespace_twilio_1_1_rest_1_1_sync_1_1_v1_1_1_service_1_1_document =
+[
+    [ "DocumentPermissionContext", "class_twilio_1_1_rest_1_1_sync_1_1_v1_1_1_service_1_1_document_1_1_document_permission_context.html", "class_twilio_1_1_rest_1_1_sync_1_1_v1_1_1_service_1_1_document_1_1_document_permission_context" ],
+    [ "DocumentPermissionInstance", "class_twilio_1_1_rest_1_1_sync_1_1_v1_1_1_service_1_1_document_1_1_document_permission_instance.html", "class_twilio_1_1_rest_1_1_sync_1_1_v1_1_1_service_1_1_document_1_1_document_permission_instance" ],
+    [ "DocumentPermissionList", "class_twilio_1_1_rest_1_1_sync_1_1_v1_1_1_service_1_1_document_1_1_document_permission_list.html", "class_twilio_1_1_rest_1_1_sync_1_1_v1_1_1_service_1_1_document_1_1_document_permission_list" ],
+    [ "DocumentPermissionPage", "class_twilio_1_1_rest_1_1_sync_1_1_v1_1_1_service_1_1_document_1_1_document_permission_page.html", "class_twilio_1_1_rest_1_1_sync_1_1_v1_1_1_service_1_1_document_1_1_document_permission_page" ]
+];

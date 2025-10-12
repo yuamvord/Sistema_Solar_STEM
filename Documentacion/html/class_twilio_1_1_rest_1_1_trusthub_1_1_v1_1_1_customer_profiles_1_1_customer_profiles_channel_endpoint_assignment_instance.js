@@ -1,0 +1,9 @@
+var class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_customer_profiles_1_1_customer_profiles_channel_endpoint_assignment_instance =
+[
+    [ "__construct", "class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_customer_profiles_1_1_customer_profiles_channel_endpoint_assignment_instance.html#a057a2fdb40301afac26dec90d7bac324", null ],
+    [ "__get", "class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_customer_profiles_1_1_customer_profiles_channel_endpoint_assignment_instance.html#a3252839e5069e10a633e3170015b2bd0", null ],
+    [ "__toString", "class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_customer_profiles_1_1_customer_profiles_channel_endpoint_assignment_instance.html#a00fba820a49b2f6a239f904f0833f8a9", null ],
+    [ "delete", "class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_customer_profiles_1_1_customer_profiles_channel_endpoint_assignment_instance.html#a07225154950f79cb71b418b5a106073f", null ],
+    [ "fetch", "class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_customer_profiles_1_1_customer_profiles_channel_endpoint_assignment_instance.html#a91817897e1e179fcd3487f1087e0ea75", null ],
+    [ "proxy", "class_twilio_1_1_rest_1_1_trusthub_1_1_v1_1_1_customer_profiles_1_1_customer_profiles_channel_endpoint_assignment_instance.html#af0937147056b0ca1002779a3e204879f", null ]
+];

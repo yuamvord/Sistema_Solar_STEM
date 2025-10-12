@@ -1,0 +1,6 @@
+var class_twilio_1_1_rest_1_1_flex_api_1_1_v1_1_1_interaction_1_1_interaction_channel_1_1_create_intd92d8a975b044ab036c5215fc8450cf2 =
+[
+    [ "__construct", "class_twilio_1_1_rest_1_1_flex_api_1_1_v1_1_1_interaction_1_1_interaction_channel_1_1_create_intd92d8a975b044ab036c5215fc8450cf2.html#a3bec0e916f6734eb1a234b7a5fc8b9ab", null ],
+    [ "__toString", "class_twilio_1_1_rest_1_1_flex_api_1_1_v1_1_1_interaction_1_1_interaction_channel_1_1_create_intd92d8a975b044ab036c5215fc8450cf2.html#a46a592fde93bd89e4fda493990d2d2b0", null ],
+    [ "setRoutingProperties", "class_twilio_1_1_rest_1_1_flex_api_1_1_v1_1_1_interaction_1_1_interaction_channel_1_1_create_intd92d8a975b044ab036c5215fc8450cf2.html#aa111b2abbe1d22e9bb8f57a5fcf0f983", null ]
+];

@@ -1,0 +1,7 @@
+var namespace_twilio_1_1_rest_1_1_serverless_1_1_v1_1_1_service_1_1_build =
+[
+    [ "BuildStatusContext", "class_twilio_1_1_rest_1_1_serverless_1_1_v1_1_1_service_1_1_build_1_1_build_status_context.html", "class_twilio_1_1_rest_1_1_serverless_1_1_v1_1_1_service_1_1_build_1_1_build_status_context" ],
+    [ "BuildStatusInstance", "class_twilio_1_1_rest_1_1_serverless_1_1_v1_1_1_service_1_1_build_1_1_build_status_instance.html", "class_twilio_1_1_rest_1_1_serverless_1_1_v1_1_1_service_1_1_build_1_1_build_status_instance" ],
+    [ "BuildStatusList", "class_twilio_1_1_rest_1_1_serverless_1_1_v1_1_1_service_1_1_build_1_1_build_status_list.html", "class_twilio_1_1_rest_1_1_serverless_1_1_v1_1_1_service_1_1_build_1_1_build_status_list" ],
+    [ "BuildStatusPage", "class_twilio_1_1_rest_1_1_serverless_1_1_v1_1_1_service_1_1_build_1_1_build_status_page.html", "class_twilio_1_1_rest_1_1_serverless_1_1_v1_1_1_service_1_1_build_1_1_build_status_page" ]
+];

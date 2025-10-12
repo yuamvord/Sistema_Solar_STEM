@@ -1,0 +1,20 @@
+var namespace_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers =
+[
+    [ "AuthorizationDocument", "namespace_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document.html", "namespace_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document" ],
+    [ "AuthorizationDocumentContext", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document_context.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document_context" ],
+    [ "AuthorizationDocumentInstance", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document_instance.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document_instance" ],
+    [ "AuthorizationDocumentList", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document_list.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document_list" ],
+    [ "AuthorizationDocumentOptions", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document_options.html", null ],
+    [ "AuthorizationDocumentPage", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document_page.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_authorization_document_page" ],
+    [ "CreateAuthorizationDocumentOptions", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_create_authorization_document_options.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_create_authorization_document_options" ],
+    [ "CreateHostedNumberOrderOptions", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_create_hosted_number_order_options.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_create_hosted_number_order_options" ],
+    [ "HostedNumberOrderContext", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_hosted_number_order_context.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_hosted_number_order_context" ],
+    [ "HostedNumberOrderInstance", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_hosted_number_order_instance.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_hosted_number_order_instance" ],
+    [ "HostedNumberOrderList", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_hosted_number_order_list.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_hosted_number_order_list" ],
+    [ "HostedNumberOrderOptions", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_hosted_number_order_options.html", null ],
+    [ "HostedNumberOrderPage", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_hosted_number_order_page.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_hosted_number_order_page" ],
+    [ "ReadAuthorizationDocumentOptions", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_read_authorization_document_options.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_read_authorization_document_options" ],
+    [ "ReadHostedNumberOrderOptions", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_read_hosted_number_order_options.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_read_hosted_number_order_options" ],
+    [ "UpdateAuthorizationDocumentOptions", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_update_authorization_document_options.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_update_authorization_document_options" ],
+    [ "UpdateHostedNumberOrderOptions", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_update_hosted_number_order_options.html", "class_twilio_1_1_rest_1_1_preview_1_1_hosted_numbers_1_1_update_hosted_number_order_options" ]
+];
