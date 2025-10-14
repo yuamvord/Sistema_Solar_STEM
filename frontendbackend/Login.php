@@ -4,6 +4,7 @@ if (isset($_SESSION['Username'])) {
     header("Location: ../index.php"); 
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +14,7 @@ if (isset($_SESSION['Username'])) {
     <title>Login</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="estilo_login.css">
+    <link rel="icon" href="img/DreamTeam.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -45,7 +47,6 @@ if (isset($_SESSION['Username'])) {
                 <a href="#">¿Olvidaste tu contraseña?</a>
                 <div class="button-group">
                     <button type="submit" class="button" id="btn-login-signin">INICIAR SESION</button>
-                    <button class="button2" id="btn-home-signin">PAGINA INICIAL</button>
                 </div>
             </form>
         </div>
@@ -81,7 +82,6 @@ if (isset($_SESSION['Username'])) {
                 </div>
                 <div class="button-group">
                     <button type="submit" class="button" id="btn-login-signup">REGISTRARME</button>
-                    <button class="button2" id="btn-home-signup">PAGINA INICIAL</button>
                 </div>
             </form>
         </div>

@@ -21,9 +21,10 @@ if (!isset($_SESSION['Username'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Solar</title>
+    <title>DTS | Sistema Solar</title>
     <link rel="stylesheet" href="frontendbackend/estilo-index.css">
     <link rel="stylesheet" href="frontendbackend/normalize.css">
+    <link rel="icon" href="frontendbackend/img/DreamTeam.ico" type="image/x-icon">
 </head>
   <body>
     <header>
@@ -31,17 +32,17 @@ if (!isset($_SESSION['Username'])) {
       <div class="contenedor menu-nav">
         <div class="logo">
           <img 
-            src="frontendbackend/img/logo-galaxia.png" 
+            src="frontendbackend/img/DreamTeam.png" 
             alt="logo-sistema-solar"
           />
-        <a href="/">Sistema Solar</a>
+        <a href="/">Dream Team Systems</a>
         </div>
         <!--! @subsection menu Menú de navegación del sitio web --->
         <nav class="navegacion">
           <ul>
             <li><a href="frontendbackend/Interfaz.php">Interfaz | Sistema Solar</a></li>
             <li><a href="frontendbackend/somos.php">¿Quiénes somos?</a></li>
-            <li><a href="frontendbackend/Login.php">Iniciar Sesión</a></li>
+            <li><a href="frontendbackend/cerrarsesion.php">Cerrar Sesión</a></li>
           </ul>
         </nav>
       </div>
@@ -165,7 +166,7 @@ if (!isset($_SESSION['Username'])) {
         </div>
         <div class="contenedor-footer-2">
             <div class="footer-final">
-              <p>&copy; 2025 - Sistema Solar | Desarrollado por José Real</p>
+              <p>&copy; 2025 - Dream Team Systems | Desarrollado por José Real y Yuam Vides</p>
             </div>
         </div>
     </footer>

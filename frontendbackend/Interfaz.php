@@ -3,68 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sistema Solar Interactivo</title>
+  <title>Interfaz | Sistema Solar</title>
   <link rel="stylesheet" href="estilo.css" />
   <link rel="stylesheet" href="normalize.css">
+  <link rel="icon" href="img/DreamTeam.ico" type="image/x-icon">
 </head>
 <body>
-<h1>Interfaz | Sistema Solar</h1>
-    <!-- Botón desplegable -->
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
+<h1>Sistema Solar Interactivo</h1>
+
+<!-- Botón desplegable -->
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Menú lateral -->
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="../index.php">Página de Inicio</a></li>
+    <li><a href="somos.php">¿Quiénes somos?</a></li> 
+  </ul>
+</nav>
+
+<!-- Información de cada planeta -->
+<div class="solarsystem">
+  <div class="sun"></div>
+
+  <div class="orbit orbit-mercury">
+    <div class="planet mercury"></div>
   </div>
 
-  <!-- Menú lateral -->
-  <nav class="side-menu" id="sideMenu">
-    <ul>
-      <li><a href="Index.html">Página de Inicio</a></li>
-      <li><a href="somos.html">¿Quiénes somos?</a></li>
-      <li><a href="inicio copy.html">Iniciar Sesión</a></li>
-    </ul>
-  </nav>
-
-  <!-- Infomación de cada planeta -->
-  <div class="solarsystem">
-    <div class="sun"></div>
-
-    <div class="orbit orbit-mercury">
-      <div class="planet mercury"></div>
-    </div>
-
-    <div class="orbit orbit-venus">
-      <div class="planet venus"></div>
-    </div>
-
-    <div class="orbit orbit-earth">
-      <div class="planet earth"></div>
-    </div>
-
-    <div class="orbit orbit-mars">
-      <div class="planet mars"></div>
-    </div>
-
-    <div class="orbit orbit-jupiter">
-      <div class="planet jupiter"></div>
-    </div>
-
-    <div class="orbit orbit-saturn">
-      <div class="planet saturn"></div>
-    </div>
-
-    <div class="orbit orbit-uranus">
-      <div class="planet uranus"></div>
-    </div>
-
-    <div class="orbit orbit-neptune">
-      <div class="planet neptune"></div>
-    </div>
-
-    <div class="orbit orbit-pluton">
-      <div class="planet pluton"></div>
-    </div>
+  <div class="orbit orbit-venus">
+    <div class="planet venus"></div>
   </div>
+
+  <div class="orbit orbit-earth">
+    <div class="planet earth"></div>
+  </div>
+
+  <div class="orbit orbit-mars">
+    <div class="planet mars"></div>
+  </div>
+
+  <div class="orbit orbit-jupiter">
+    <div class="planet jupiter"></div>
+  </div>
+
+  <div class="orbit orbit-saturn">
+    <div class="planet saturn"></div>
+  </div>
+
+  <div class="orbit orbit-uranus">
+    <div class="planet uranus"></div>
+  </div>
+
+  <div class="orbit orbit-neptune">
+    <div class="planet neptune"></div>
+  </div>
+
+  <div class="orbit orbit-pluton">
+    <div class="planet pluton"></div>
+  </div>
+</div>
 
 <div class="left-half">
   <div class="carousel-viewport" id="carousel">
