@@ -1,73 +1,92 @@
+/* ==========================================================================
+   Autor: José Daniel Real García
+   @brief: Estilos para página del equipo / “Team Page”
+   ========================================================================== */
+
+/* ==========================================================================
+   @section IMPORTACIÓN DE FUENTES
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* ==========================================================================
+   @section RESET Y BASE
+   ========================================================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif; /**< Fuente principal de toda la página */
 }
 
-/* ===== BODY ===== */
+/* ==========================================================================
+   @section BODY
+   ========================================================================== */
 body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 100vh;                   /**< Altura total de la ventana */
+  display: flex;                   
+  flex-direction: column;          
+  justify-content: space-between;  /**< Espaciado vertical entre header, contenido y footer */
 
   /* Fondo liso fuerte y oscuro */
-  background-color: #0A1B2A; /* Azul marino profundo */
-  color: #D4F1EF;
+  background-color: #0A1B2A;       /**< Azul marino profundo */
+  color: #D4F1EF;                  /**< Color principal del texto */
 
   /* Ligera textura animada sutil */
   background-image: radial-gradient(circle at 20% 30%, rgba(3,190,225,0.12) 0%, transparent 50%),
                     radial-gradient(circle at 80% 70%, rgba(2,125,178,0.15) 0%, transparent 50%);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;    /**< Mantiene el fondo fijo al hacer scroll */
 }
 
-/* ===== HEADER ===== */
+/* ==========================================================================
+   @section HEADER
+   ========================================================================== */
 .header {
   text-align: center;
   max-width: 900px;
-  margin: 6rem auto 3rem;
+  margin: 6rem auto 3rem;          /**< Margen superior y inferior */
   color: #fff;
-  padding: 0 2rem;
+  padding: 0 2rem;                 /**< Espaciado horizontal */
 }
 
 .header h1 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   font-weight: 800;
-  color: #03BEE1;
+  color: #03BEE1;                  /**< Color azul celeste destacado */
 }
 
 .header p {
   font-size: 1.6rem;
-  color: #E6F7FF;
+  color: #E6F7FF;                  /**< Color más suave para párrafos */
 }
 
-/* ===== TEAM SECTION ===== */
+/* ==========================================================================
+   @section TEAM SECTION
+   ========================================================================== */
 .team-section {
   max-width: 1900px;
   margin: 0 auto 6rem;
-  padding: 2rem;
+  padding: 2rem;                   /**< Espaciado interno */
 }
 
 .team-grid {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  flex-wrap: wrap;
-  gap: 2.5rem;
+  flex-wrap: wrap;                 /**< Permite que los miembros bajen de fila */
+  gap: 2.5rem;                     /**< Separación entre tarjetas */
 }
 
-/* ===== TEAM MEMBER CARD ===== */
+/* ==========================================================================
+   @section TEAM MEMBER CARD
+   ========================================================================== */
 .team-member {
-  flex: 1 1 320px;
+  flex: 1 1 320px;                 /**< Base mínima 320px, flexible */
   max-width: 340px;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);     /**< Efecto vidrio difuminado */
   border-radius: 1.8rem;
   padding: 3rem 2rem;
   text-align: center;
@@ -77,7 +96,7 @@ body {
 }
 
 .team-member:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px);   /**< Efecto elevación al pasar el cursor */
   box-shadow: 0 0 30px rgba(3, 190, 225, 0.6);
 }
 
@@ -85,8 +104,8 @@ body {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #03BEE1;
+  border-radius: 50%;              /**< Imagen circular */
+  border: 5px solid #03BEE1;      /**< Borde azul celeste */
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
 }
@@ -109,10 +128,12 @@ body {
   margin-top: 1.5rem;
   font-size: 1rem;
   color: #EAF9FF;
-  line-height: 1.6;
+  line-height: 1.6;                /**< Mejor legibilidad */
 }
 
-/* ===== BACK LINK ===== */
+/* ==========================================================================
+   @section BACK LINK
+   ========================================================================== */
 .back-link {
   text-align: center;
   margin-top: 7.6rem;
@@ -133,7 +154,9 @@ body {
   transform: scale(1.05);
 }
 
-/* ===== FOOTER ===== */
+/* ==========================================================================
+   @section FOOTER
+   ========================================================================== */
 .footer {
   background-color: rgba(5, 25, 45, 0.95);
   color: #D4F1EF;
@@ -143,7 +166,9 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ==========================================================================
+   @section RESPONSIVE
+   ========================================================================== */
 @media (max-width: 1200px) {
   .team-member {
     max-width: 45%;

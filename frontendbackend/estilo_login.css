@@ -1,23 +1,39 @@
+/* ==========================================================================
+   Autor: José Daniel Real García
+   @brief: Estilos para formulario de login / registro con animaciones
+   ========================================================================== */
+
+/* ==========================================================================
+   @section IMPORTACIÓN DE FUENTES
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* ==========================================================================
+   @section RESET Y BASE
+   ========================================================================== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  margin: 0;                 /**< Elimina márgenes por defecto */
+  padding: 0;                /**< Elimina padding por defecto */
+  box-sizing: border-box;    /**< Incluye padding y borde en el ancho/alto */
+  font-family: "Montserrat", sans-serif; /**< Fuente principal */
 }
 
+/* ==========================================================================
+   @section BODY
+   ========================================================================== */
 body {
   width: 100%;
-  height: 100vh;
+  height: 100vh;             /**< Ocupa toda la altura de la ventana */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f4f3;
-  padding: 10px;
+  justify-content: center;   /**< Centra horizontalmente el contenedor */
+  align-items: center;       /**< Centra verticalmente el contenedor */
+  background-color: #f0f4f3; /**< Fondo gris claro */
+  padding: 10px;             /**< Pequeño padding interno */
 }
 
-
+/* ==========================================================================
+   @section CONTENEDOR PRINCIPAL
+   ========================================================================== */
 .container {
   width: 800px;
   height: 500px;
@@ -25,11 +41,14 @@ body {
   position: relative;
   background-color: white;
   border-radius: 15px;
-  overflow: hidden;
+  overflow: hidden;          /**< Oculta contenido que sobresalga */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /**< Transición suave al cambiar propiedades */
 }
 
+/* ==========================================================================
+   @section FORMULARIO
+   ========================================================================== */
 .container-form {
   width: 100%;
   overflow: hidden;
@@ -41,7 +60,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in; /**< Animación de cambio de posición */
   padding: 20px;
 }
 
@@ -50,22 +69,25 @@ body {
   margin-bottom: 20px;
 }
 
+/* ==========================================================================
+   @section REDES SOCIALES
+   ========================================================================== */
 .social-networks {
   display: flex;
-  justify-content: center; /* puedes cambiar a: flex-start, flex-end, space-between, etc. */
+  justify-content: center;  /**< Centrado horizontal de los iconos */
   align-items: center;
-  gap: 25px;
+  gap: 25px;                /**< Espacio entre iconos */
   margin-bottom: 25px;
 
-  /* --- Control de posición --- */
-  position: relative; /* Se puede cambiar a absolute o fixed para moverlo libremente */
-  top: 10px;     /* ajusta posición vertical */
-  left: 0;    /* ajusta posición horizontal */
+  /* Control de posición */
+  position: relative;       /**< Se puede ajustar con top/left */
+  top: 10px;
+  left: 0;
 
-  /* --- Opcional: control de tamaño y alineación --- */
-  width: fit-content; /* se ajusta al contenido */
+  /* Control de tamaño */
+  width: fit-content;       /**< Ajusta al contenido */
   height: auto;
-  margin: 0 auto; /* centra horizontalmente si es relativo o está dentro de otro contenedor */
+  margin: 0 auto;           /**< Centrado horizontal si es relativo */
 }
 
 .social-networks ion-icon {
@@ -75,19 +97,32 @@ body {
   font-size: 18px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  background-color: white; /* opcional */
+  background-color: white;
 }
 
 .social-networks ion-icon:hover {
-  transform: scale(1.1);
-  background-color: #f2f2f2; /* efecto visual suave */
+  transform: scale(1.1);       /**< Efecto de agrandamiento */
+  background-color: #f2f2f2;   /**< Cambio de fondo suave */
 }
 
+/* ==========================================================================
+   @section SPANS Y ENLACES
+   ========================================================================== */
 .container-form span {
   font-size: 12px;
   margin-bottom: 15px;
 }
 
+.container-form a {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+/* ==========================================================================
+   @section INPUTS
+   ========================================================================== */
 .container-input {
   width: 300px;
   height: 40px;
@@ -109,13 +144,9 @@ body {
   background-color: inherit;
 }
 
-.container-form a {
-  color: black;
-  font-size: 14px;
-  margin-bottom: 20px;
-  margin-top: 5px;
-}
-
+/* ==========================================================================
+   @section GRUPO DE BOTONES
+   ========================================================================== */
 .button-group {
   display: flex;
   justify-content: center;
@@ -129,7 +160,7 @@ body {
   left: 0;
 }
 
-.button{
+.button {
   width: 150px;
   height: 40px;
   font-size: 15px;
@@ -140,16 +171,17 @@ body {
   background: linear-gradient(to right, #026BA5, #03BEE1, #D4F1EF);
   color: white;
   transition: 0.3s ease;
-  background-size: 200% auto; /* permite animar el degradado */
+  background-size: 200% auto; /**< Permite animar el degradado */
 }
 
-/* Efecto al pasar el mouse */
-.button:hover{
-  background-position: right center; /* mueve el degradado */
+.button:hover {
+  background-position: right center; /**< Movimiento del degradado */
   transform: scale(1.05);
 }
 
-/* animación del form */
+/* ==========================================================================
+   @section ANIMACIÓN DE FORMULARIOS (SIGN-IN / SIGN-UP)
+   ========================================================================== */
 .sign-up {
   transform: translateX(-100%);
 }
@@ -162,7 +194,9 @@ body {
   transform: translateX(0);
 }
 
-/* Welcome */
+/* ==========================================================================
+   @section WELCOME / PANEL ANIMADO
+   ========================================================================== */
 .container-welcome {
   position: absolute;
   width: 50%;
@@ -220,9 +254,9 @@ body {
   transform: translateX(-100%);
 }
 
-/* ===================== RESPONSIVE DESIGN ===================== */
-
-/* Pantallas medianas (tablets o pantallas menores a 900px) */
+/* ==========================================================================
+   @section RESPONSIVE DESIGN
+   ========================================================================== */
 @media (max-width: 900px) {
   .container {
     width: 90%;

@@ -1,34 +1,46 @@
+/* ==========================================================================
+   Autor: José Daniel Real García
+   @brief: Estilos para página web con header, hero, artículos y footer
+   ========================================================================== */
+
+/* ==========================================================================
+   @section IMPORTACIÓN DE FUENTES
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* ==========================================================================
+   @section RESET Y BASE
+   ========================================================================== */
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;      /**< Asegura que padding y border se sumen al ancho total */
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif; /**< Fuente principal */
 }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+  font-size: 62.5%;            /**< 1rem = 10px aproximadamente */
+  scroll-behavior: smooth;      /**< Scroll suave para anclas */
 }
 
 body {
-  font-size: 1.6rem;
-  color: #1e293b;
-  background: linear-gradient(135deg, #D4F1EF, #f5faff);
+  font-size: 1.6rem;            /**< Tamaño base del texto */
+  color: #1e293b;               /**< Color de texto principal */
+  background: linear-gradient(135deg, #D4F1EF, #f5faff); /**< Fondo degradado diagonal */
 }
 
-/* ======= HEADER ======= */
-
+/* ==========================================================================
+   @section HEADER
+   ========================================================================== */
 header {
-  background: linear-gradient(to right, #000080, #027DB2, #069DC8);
+  background: linear-gradient(to right, #000080, #027DB2, #069DC8); /**< Gradiente azul */
   color: #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15); /**< Sombra sutil */
 }
 
 .menu-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /**< Separación entre logo y menú */
   align-items: center;
   padding: 2rem 4rem;
 }
@@ -41,7 +53,7 @@ header {
 
 .logo img {
   width: 4rem;
-  border-radius: 8px;
+  border-radius: 8px; /**< Bordes redondeados */
 }
 
 .logo a {
@@ -61,15 +73,16 @@ header {
   text-decoration: none;
   color: #eaf8ff;
   font-weight: 400;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; /**< Efecto hover */
 }
 
 .navegacion a:hover {
   color: #03BEE1;
 }
 
-/* ======= HERO / HEADER 2 ======= */
-
+/* ==========================================================================
+   @section HERO / HEADER 2
+   ========================================================================== */
 .contenedor-header {
   display: flex;
   align-items: center;
@@ -141,8 +154,9 @@ header {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* ======= MAIN ======= */
-
+/* ==========================================================================
+   @section MAIN
+   ========================================================================== */
 main {
   background-color: #ffffff;
   color: #1e293b;
@@ -182,7 +196,7 @@ main {
 }
 
 .articulo:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /**< Elevación al pasar el cursor */
 }
 
 .etiqueta {
@@ -226,8 +240,9 @@ main {
   color: #03BEE1;
 }
 
-/* ======= BOTÓN VER TODOS ======= */
-
+/* ==========================================================================
+   @section BOTÓN VER TODOS
+   ========================================================================== */
 .contenedor-btn {
   display: flex;
   justify-content: center;
@@ -249,8 +264,9 @@ main {
   background-position: right center;
 }
 
-/* ======= FOOTER ======= */
-
+/* ==========================================================================
+   @section FOOTER
+   ========================================================================== */
 footer {
   background: linear-gradient(to right, #000080, #027DB2, #069DC8);
   color: #fff;
@@ -286,4 +302,3 @@ footer {
   font-size: 1.4rem;
   letter-spacing: 0.5px;
 }
-

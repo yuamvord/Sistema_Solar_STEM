@@ -1,13 +1,46 @@
+<!--!
+/**
+ * @file quienes-somos.html
+ * @brief Página informativa "¿Quiénes Somos?" del Proyecto Sistema Solar.
+ * @details 
+ * Esta página describe al equipo de desarrollo del proyecto educativo interactivo sobre el sistema solar,
+ * destacando los roles, funciones y especializaciones de cada integrante.  
+ * 
+ * Forma parte del Proyecto Final del curso de **Algoritmos** en la **Universidad Mariano Gálvez**.
+ * @author 
+ *   - José Daniel Real García  
+ * @date 2025-10-15
+ */
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!--!
+  /**
+   * @section metadata Metadatos del documento
+   * @brief Contiene información de configuración, título y vínculos externos.
+   * @details 
+   * Se define la codificación, adaptabilidad del viewport, título de la pestaña del navegador,
+   * y se enlazan los recursos de ícono y hoja de estilos principal.
+   */
+  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>¿Quiénes Somos? | Proyecto Sistema Solar</title>
   <link rel="icon" href="img/DreamTeam.ico" type="image/x-icon">
   <link rel="stylesheet" href="estilo-somos.css">
 </head>
+
 <body>
+  <!--!
+  /**
+   * @section header Encabezado principal
+   * @brief Presenta el título y una descripción general del propósito del equipo.
+   * @details 
+   * Describe el objetivo del proyecto, el contexto académico y el enfoque educativo del mismo.
+   */
+  -->
   <header class="header">
     <h1>¿Quiénes somos?</h1>
     <p>
@@ -18,9 +51,23 @@
     </p>
   </header>
 
+  <!--!
+  /**
+   * @section main Contenido principal
+   * @brief Contiene la presentación del equipo y sus respectivos roles.
+   * @details 
+   * Cada miembro se representa mediante una tarjeta con imagen, nombre, rol y descripción de funciones.
+   */
+  -->
   <main class="team-section">
     <div class="team-grid">
-      <!-- Integrante 1 -->
+      <!--!
+      /**
+       * @subsection miembro1 Ariel Yuam Vides Ordoñez
+       * @brief Chief Information Security Officer (CISO)
+       * @details Supervisa la seguridad y estrategia tecnológica del proyecto.
+       */
+      -->
       <div class="team-member">
         <img src="img/yuamFoto.jpg" alt="Ariel Yuam Vides Ordoñez">
         <h3>Ariel Yuam Vides Ordoñez</h3>
@@ -32,7 +79,13 @@
         </p>
       </div>
 
-      <!-- Integrante 2 -->
+      <!--!
+      /**
+       * @subsection miembro2 José Daniel Real García
+       * @brief Frontend Lead Developer
+       * @details Lidera el desarrollo de interfaces web y garantiza la experiencia de usuario.
+       */
+      -->
       <div class="team-member">
         <img src="img/foto José Real.jpeg" alt="José Daniel Real García">
         <h3>José Daniel Real García</h3>
@@ -44,7 +97,13 @@
         </p>
       </div>
 
-      <!-- Integrante 3 -->
+      <!--!
+      /**
+       * @subsection miembro3 José Miguel Argueta Ortíz
+       * @brief Business Analyst
+       * @details Responsable de la documentación técnica, análisis funcional y requerimientos.
+       */
+      -->
       <div class="team-member">
         <img src="img/foto José A.png" alt="José Miguel Argueta Ortíz">
         <h3>José Miguel Argueta Ortíz</h3>
@@ -56,7 +115,13 @@
         </p>
       </div>
 
-      <!-- Integrante 4 -->
+      <!--!
+      /**
+       * @subsection miembro4 Rodrigo Adrian Barrios Monterroso
+       * @brief UX/UI Design Manager
+       * @details Encargado del diseño visual, usabilidad y experiencia interactiva del usuario.
+       */
+      -->
       <div class="team-member">
         <img src="img/foto Adrian.png" alt="Rodrigo Adrian Barrios Monterroso">
         <h3>Rodrigo Adrian Barrios Monterroso</h3>
@@ -68,7 +133,13 @@
         </p>
       </div>
 
-      <!-- Integrante 5 -->
+      <!--!
+      /**
+       * @subsection miembro5 Moisés Abinadí Farfan González
+       * @brief Hardware Engineering Manager
+       * @details Supervisa la integración hardware-software y la validación de sistemas electrónicos.
+       */
+      -->
       <div class="team-member">
         <img src="img/foto Farfan.png" alt="Moisés Abinadí Farfan González">
         <h3>Moisés Abinadí Farfan González</h3>
@@ -81,13 +152,26 @@
       </div>
     </div>
 
+    <!--!
+    /**
+     * @subsection back-link Enlace de retorno
+     * @brief Enlace que redirige al usuario a la página de inicio.
+     */
+    -->
     <div class="back-link">
       <a href="../Index.php">← Página de Inicio</a>
     </div>
   </main>
 
+  <!--!
+  /**
+   * @section footer Pie de página
+   * @brief Contiene información de derechos de autor y créditos de desarrollo.
+   */
+  -->
   <footer class="footer">
     <p>&copy; 2025 - Dream Team Systems | Desarrollado por José Real y Yuam Vides</p>
   </footer>
 </body>
 </html>
+
