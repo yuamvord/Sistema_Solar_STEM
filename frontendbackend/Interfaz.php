@@ -1,3 +1,31 @@
+<?php
+session_start();
+require_once "conexion.php";
+
+// Si no hay sesión activa → login
+if (!isset($_SESSION['id'])) {
+    header("Location: Login.php");
+    exit();
+}
+
+// Verificar si el usuario está bloqueado
+$id = $_SESSION['id'];
+$sql = "SELECT Aprobado FROM users WHERE id = ?";
+$stmt = $conexion->prepare($sql);
+$stmt->bind_param("i", $id);
+$stmt->execute();
+$stmt->bind_result($aprobado);
+$stmt->fetch();
+$stmt->close();
+
+// Si fue bloqueado → cerrar sesión y redirigir
+if ((int)$aprobado === 0) {
+    session_unset();
+    session_destroy();
+    header("Location: Login.php?error=Tu cuenta ha sido bloqueada por un administrador");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <!--
 /**
@@ -114,5 +142,6 @@
    */
   -->
   <script src="funciones.js"></script>
+  <script src="verificar_sesion.js"></script>
 </body>
 </html>

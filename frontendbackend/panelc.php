@@ -15,7 +15,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DTS | Sistema Solar</title>
+    <title>DTS | Panel de Control</title>
     <link rel="stylesheet" href="panelc.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="icon" href="frontendbackend/img/DreamTeam.ico" type="image/x-icon">

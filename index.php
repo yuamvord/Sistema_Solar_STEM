@@ -11,10 +11,39 @@
 --->
 <?php
 session_start();
+require_once "frontendbackend/conexion.php";
+
+
 if (!isset($_SESSION['Username'])) {
     header("Location: frontendbackend/Login.php?error=Debes iniciar sesión primero");
     exit();
 }
+
+
+
+if (!isset($_SESSION['id'])) {
+    header("Location: Login.php");
+    exit();
+}
+
+// Verificar si el usuario está bloqueado
+$id = $_SESSION['id'];
+$sql = "SELECT Aprobado FROM users WHERE id = ?";
+$stmt = $conexion->prepare($sql);
+$stmt->bind_param("i", $id);
+$stmt->execute();
+$stmt->bind_result($aprobado);
+$stmt->fetch();
+$stmt->close();
+
+// Si fue bloqueado → cerrar sesión y redirigir
+if ((int)$aprobado === 0) {
+    session_unset();
+    session_destroy();
+    header("Location: Login.php?error=Tu cuenta ha sido bloqueada por un administrador");
+    exit();
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -157,5 +186,12 @@ if (!isset($_SESSION['Username'])) {
 </body>
 
 
+<<<<<<< HEAD
+=======
+
+    <script src="frontendbackend/verificar_sesion.js"></script>
+
+  </body>
+>>>>>>> af85817939e1b2cbffe77c5fece26dfb87d32d19
 </html>
 
