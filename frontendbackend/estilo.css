@@ -26,7 +26,7 @@
   --accent-2: #03BEE1;
   --accent-3: #069DC8;
   --light: #D4F1EF;
-  --bg-dark: #061421;
+  --bg-dark: #071829;
   --panel-bg: rgba(255,255,255,0.06);
   --muted: rgba(255,255,255,0.12);
 
@@ -75,6 +75,7 @@ html,body{
   box-shadow: 0 4px 14px rgba(0,0,0,0.35);
   transition: transform .18s ease, background .18s ease;
 }
+
 .hamburger:active { transform: scale(.98); }
 
 .hamburger span {
@@ -484,20 +485,72 @@ h1 {
 }
 
 @media (max-width:900px){
-  :root{ --left-width:100vw; --carousel-height:48vh; }
+  :root{ 
+    --left-width:100vw; 
+    --carousel-height:48vh; 
+  }
 
   html,body{ 
     overflow-y:auto; 
     -webkit-overflow-scrolling:touch; 
   }
-  .left-half{ position: relative; width:100%; height:auto; padding:20px; margin:0 auto; }
-  .carousel-viewport{ width:calc(100% - 40px); height:var(--carousel-height); margin:0 auto; }
-  .solarsystem{ position: relative; width:100%; height:42vh; margin-top:18px; right:auto; top:auto; background:transparent; pointer-events:auto; }
-  .solarsystem .orbit{ border-color: rgba(255,255,255,0.04); }
-  .detail-panel{ position: fixed; flex-direction: column; width:92vw; height:68vh; padding:18px; }
-  .detail-left{ width:100%; min-width:auto; display:flex; gap:12px; align-items:center; justify-content:center; }
-  .detail-right{ width:100%; padding:12px 4px; }
-  .big-img{ width:140px; height:140px; margin-bottom:6px; }
+
+  .left-half{ 
+    position: relative; 
+    width:100%; 
+    height:auto; 
+    padding:20px; 
+    margin:0 auto; 
+  }
+  .carousel-viewport{ 
+    width:calc(100% - 40px); 
+    height:var(--carousel-height); 
+    margin:0 auto; 
+  }
+
+  .solarsystem{ 
+    position: relative; 
+    width:100%; 
+    height:42vh; 
+    margin-top:18px; 
+    right:auto; 
+    top:auto; 
+    background:transparent; 
+    pointer-events:auto; 
+  }
+
+  .solarsystem .orbit{ 
+    border-color: rgba(255,255,255,0.04); 
+  }
+
+  .detail-panel{ 
+    position: fixed; 
+    flex-direction: column; 
+    width:92vw; 
+    height:68vh; 
+    padding:18px; 
+  }
+
+  .detail-left{ 
+    width:100%; 
+    min-width:auto; 
+    display:flex; 
+    gap:12px; 
+    align-items:center; 
+    justify-content:center; 
+  }
+
+  .detail-right{ 
+    width:100%; 
+    padding:12px 4px; 
+  }
+
+  .big-img{ 
+    width:140px; 
+    height:140px; 
+    margin-bottom:6px; 
+  }
+
   .detail-title{text-align:center;}
 }
 

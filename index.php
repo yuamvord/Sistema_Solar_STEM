@@ -26,151 +26,136 @@ if (!isset($_SESSION['Username'])) {
     <link rel="stylesheet" href="frontendbackend/normalize.css">
     <link rel="icon" href="frontendbackend/img/DreamTeam.ico" type="image/x-icon">
 </head>
-  <body>
-    <header>
-      <!--! @section header Encabezado del sitio web-->
-      <div class="contenedor menu-nav">
-        <div class="logo">
-          <img 
-            src="frontendbackend/img/DreamTeam.png" 
-            alt="logo-sistema-solar"
-          />
-        <a href="/">Dream Team Systems</a>
-        </div>
-        <!--! @subsection menu Menú de navegación del sitio web --->
-        <nav class="navegacion">
-          <ul>
-            <li><a href="frontendbackend/Interfaz.php">Interfaz | Sistema Solar</a></li>
-            <li><a href="frontendbackend/somos.php">¿Quiénes somos?</a></li>
-            <li><a href="frontendbackend/cerrarsesion.php">Cerrar Sesión</a></li>
-          </ul>
-        </nav>
+<body>
+  <header>
+    <div class="contenedor menu-nav">
+      <div class="logo">
+        <img src="frontendbackend/img/DreamTeam.png" alt="logo">
+        <a href="index.php">Dream Team Systems</a>
       </div>
-      <!--! @subsection banner Banner e información inicial de la págin web -->
-      <section class="contenedor-header">
-        <div class="contenido-header">
-          <h1>Sistema Solar Interactivo</h1>
-          <p>
-            Fuente de información interactivo para el aprendizaje orientado en el sistema solar, información detallada de cada planeta e información relacionada con el espacio. Nuestro proyecto tiene el objetivo de aprender y desarrollar nuevas habilidades y conocimientos de forma autodidacta.
-          </p>
-          <ul class="botones-header">
-            <li><a href="#">Página de Inicio</a></li>
-            <li><a href="#">¿Quiénes somos?</a></li>
-          </ul>
-        </div>
-        <div>
-          <img 
-              src="frontendbackend/img/banner sistema solar.png" 
-              alt="banner-header">
-        </div>
-      </section>
-    </header>
-  <!--! @section main Contenido principal de la página web --->
-    <main>
-      <!--! @subsection contenido Articulo y contenido de la página web acerca del sistema solar --->
-      <div class="seccion-principal">
-          <h2>Hola Mundo</h2>
-          <p class="parrafo-titulo">Holaaaa holaaaaa</p>
-          <section class="contenedor-articulos">
-              <div class="articulo">
-                <span class="etiqueta">Sistema Solar</span>
-                <h2><a href="#">El Sol es la estrella más grande de nuestra Galaxia</a></h2>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nemo, excepturi tempora vel praesentium laborum vero quidem, alias iste doloremque tempore, aperiam magnam atque amet asperiores veniam ullam sequi perspiciatis.
-                </p>
-                <div class="mas-información">
-                  <a href="#">Leer más</a>
-                  <span class="span-lectura">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime id, in porro fuga eligendi doloribus perspiciatis minima quos nihil odio voluptates voluptatibus cupiditate laborum repellat consectetur expedita quaerat nobis.</span>
-                </div>
-              </div>
-              <div class="articulo">
-                <span class="etiqueta">Sistema Solar</span>
-                <h2><a href="#">El Sol es la estrella más grande de nuestra Galaxia</a></h2>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nemo, excepturi tempora vel praesentium laborum vero quidem, alias iste doloremque tempore, aperiam magnam atque amet asperiores veniam ullam sequi perspiciatis.
-                </p>
-                <div class="mas-informacion">
-                  <a href="#">Leer más</a>
-                  <span class="span-lectura">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime id, in porro fuga eligendi doloribus perspiciatis minima quos nihil odio voluptates voluptatibus cupiditate laborum repellat consectetur expedita quaerat nobis.</span>
-                </div>
-              </div>
-              <div class="articulo">
-                <span class="etiqueta">Sistema Solar</span>
-                <h2><a href="#">El Sol es la estrella más grande de nuestra Galaxia</a></h2>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nemo, excepturi tempora vel praesentium laborum vero quidem, alias iste doloremque tempore, aperiam magnam atque amet asperiores veniam ullam sequi perspiciatis.
-                </p>
-                <div class="mas-información">
-                  <a href="#">Leer más</a>
-                  <span class="span-lectura">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime id, in porro fuga eligendi doloribus perspiciatis minima quos nihil odio voluptates voluptatibus cupiditate laborum repellat consectetur expedita quaerat nobis.</span>
-                </div>
-              </div>
-              <div class="articulo">
-                <span class="etiqueta">Sistema Solar</span>
-                <h2><a href="#">El Sol es la estrella más grande de nuestra Galaxia</a></h2>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro nemo, excepturi tempora vel praesentium laborum vero quidem, alias iste doloremque tempore, aperiam magnam atque amet asperiores veniam ullam sequi perspiciatis.
-                </p>
-                <div class="mas-información">
-                  <a href="#">Leer más</a>
-                  <span class="span-lectura">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime id, in porro fuga eligendi doloribus perspiciatis minima quos nihil odio voluptates voluptatibus cupiditate laborum repellat consectetur expedita quaerat nobis.</span>
-                </div>
-              </div>
-               <div class="contenedor-btn">
-                  <a href="#" class="btn-ver-todos">Ver Todos</a>
-               </div>
-          </section>
+
+      <nav class="navegacion">
+        <ul>
+          <li><a href="frontendbackend/Interfaz.php">Interfaz | Sistema Solar</a></li>
+          <li><a href="frontendbackend/somos.php">¿Quiénes somos?</a></li>
+          <li><a href="frontendbackend/cerrarsesion.php">Cerrar Sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="contenedor-header">
+      <div class="contenido-header">
+        <h1>Sistema Solar Interactivo</h1>
+        <p>
+          Fuente de información interactivo para el aprendizaje orientado en el sistema solar, información detallada de cada planeta e información relacionada con el espacio. Nuestro proyecto tiene el objetivo de aprender y desarrollar nuevas habilidades y conocimientos de forma autodidacta.
+        </p>
+        <ul class="botones-header">
+          <li><a href="frontendbackend/panelc.php">Panel de Control</a></li>
+          <li><a href="index.php">Página de Inicio</a></li>
+        </ul>
       </div>
-    </main>
+    </section>
+  </header>
 
-    <!--! @section footer Pie de página con enlaces a redes sociales y otros accesos al sitio --->
-    <footer>
-      <!--! @subsection enlaces Submenus con enlaces a diferentes fuentes de la página --->
-        <div class="contenedor-footer">
-          <!--! @article recursos Enlaces a los recursos como documentación, accesos y repositorios --->
-            <div class="fuentes-footer">
-                <h3>Recursos</h3>    
-                <ul>
-                  <li><a href="#">Mapa del sitio</a></li>
-                  <li><a href="#">Mapa del sitio</a></li>
-                  <li><a href="#">Mapa del sitio</a></li>
-                  <li><a href="#">Mapa del sitio</a></li>
-                </ul>
-            </div>
-            <!--! @article páginas Enlaces a diferentes accesos dentro de la página --->
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section class="seccion-principal">
+      <h2>Conoce el Sistema Solar</h2>
+      <p class="parrafo-titulo">
+        Explora información detallada sobre el Sistema Solar: su formación, estructura, planetas, asteroides, cometas y fenómenos celestes fascinantes.
+      </p>
 
-            <div class="paginas-footer">
-                <h3>Páginas</h3>
-                <ul>
-                  <li><a href="#">¿Quines Somos?</a></li>
-                  <li><a href="#">Contactenos</a></li>
-                </ul>
-            </div>
-            <!--! @article explorar Enlaces redes sociales y recursos informativos de la empresa --->
-
-            <div class="explorar-footer">
-                <h3>Explorar</h3>
-                <ul>
-                  <li><a href="#">¿Quines Somos?</a></li>
-                  <li><a href="#">Contactenos</a></li>
-                </ul>
-            </div>
-            <!--! @article proyectos Enlaces a proyectos realizados por la empresa --->
-            <div class="proyectos-footer">
-                <h3>Proyectos</h3>
-                <ul>
-                  <li><a href="#">¿Quines Somos?</a></li>
-                  <li><a href="#">Contactenos</a></li>
-                </ul>
-            </div>
+      <div class="info-general">
+        <h3>¿Qué es el Sistema Solar?</h3>
+        <p>El Sistema Solar está compuesto por el Sol y todos los cuerpos celestes que orbitan a su alrededor, incluyendo ocho planetas, planetas enanos, lunas, asteroides y cometas.</p>
+        <p>Se formó hace aproximadamente 4.600 millones de años a partir del colapso de una nube de gas y polvo en la Vía Láctea, dando origen al Sol y a los planetas.</p>
+        <p>Su estructura se divide en: el Sol como estrella central, los planetas interiores rocosos, los planetas exteriores gaseosos y los cinturones de objetos menores.</p>
+        <div class="imagen-placeholder">
+          <img src="frontendbackend/img/sistema_solar.jpg" alt="Imagen del Sistema Solar">
         </div>
-        <div class="contenedor-footer-2">
-            <div class="footer-final">
-              <p>&copy; 2025 - Dream Team Systems | Desarrollado por José Real y Yuam Vides</p>
-            </div>
-        </div>
-    </footer>
+      </div>
 
-  </body>
+      <div class="planetas">
+        <h3>Los Planetas</h3>
+        <p>Hay ocho planetas principales: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno. Los planetas interiores son rocosos y los exteriores son gigantes gaseosos o de hielo.</p>
+        <div class="imagen-placeholder">
+          <img src="frontendbackend/img/planetas.png" alt="Imagen de los planetas">
+        </div>
+        <p>Cada planeta tiene características únicas: <strong>Mercurio</strong> es el más cercano al Sol, <strong>Tierra</strong> tiene vida y agua líquida, <strong>Júpiter</strong> es el más grande y <strong>Neptuno</strong> es un gigante helado con fuertes vientos.</p>
+      </div>
+
+      <div class="otros-objetos">
+        <h3>Otros Objetos Celestes</h3>
+        <p>Además de los planetas y lunas, existen asteroides en el cinturón principal, cometas con órbitas elípticas, y cuerpos en el cinturón de Kuiper y la nube de Oort.</p>
+        <p>Estos objetos son restos de la formación del Sistema Solar y nos ayudan a entender su evolución y composición química.</p>
+        <div class="imagen-placeholder">
+          <img src="frontendbackend/img/cuerpos_celestes.jpg" alt="Asteroides y cometas">
+        </div>
+      </div>
+
+      <div class="datos-curiosos">
+        <h3>Datos Curiosos</h3>
+        <ul>
+          <li>El Sol representa el 99,86% de la masa del Sistema Solar.</li>
+          <li>El planeta más rápido es Mercurio, con una órbita de 88 días.</li>
+          <li>Saturno tiene los anillos más espectaculares, formados por hielo y roca.</li>
+          <li>Júpiter tiene más de 80 lunas confirmadas.</li>
+          <li>El Sistema Solar viaja a unos 828.000 km/h alrededor del centro de la galaxia.</li>
+        </ul>
+      </div>
+
+      <div class="contenedor-btn">
+        <a href="frontendbackend/Interfaz.php" class="btn-ver-todos">Explorar más sobre el Sistema Solar</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="contenedor-footer">
+      <div class="footer-logo">
+        <img src="frontendbackend/img/DreamTeam.png" alt="Logo Dream Team">
+      </div>
+      <div class="fuentes-footer">
+        <h3>Recursos</h3>
+        <ul>
+          <li><a href="Documents/Documentación - Sistema Solar" download="Documentación - Sistema Solar">Documentación</a></li>
+          <li><a href="#">Informe</a></li>
+          <li><a href="#">Manual de Usuario</a></li>
+        </ul>
+      </div>
+      <div class="paginas-footer">
+        <h3>Páginas</h3>
+        <ul>
+          <li><a href="frontendbackend/interfaz.php">Interfaz | Sistema Solar</a></li>
+          <li><a href="frontendbackend/panelc.php">Panel de Control</a></li>
+          <li><a href="frontendbackend/somos.php">¿Quiénes Somos?</a></li>
+        </ul>
+      </div>
+      <div class="explorar-footer">
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li><a href="https://github.com/yuamvord/Sistema_Solar_STEM">GitHub</a></li>
+          <li><a href="https://www.instagram.com/dreamteamsystems">Instagram</a></li>
+          <li><a href="http://www.linkedin.com/in/dts-dream-team-systems-041b9b364">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="proyectos-footer">
+        <h3>Proyectos</h3>
+        <ul>
+          <li><a href="index.php">Sistema Solar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contenedor-footer-2">
+      <div class="footer-final">
+        <p>&copy; 2025 - Dream Team Systems | Desarrollado por José Real y Yuam Vides</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+
 </html>
 
