@@ -1,14 +1,14 @@
-/* ==========================================================================  
+/** ==========================================================================  
    Autor: José Daniel Real García  
    @brief: CSS completo mejorado, responsivo y footer adaptativo  
    ========================================================================== */
 
-/* ==========================================================================  
+/** ==========================================================================  
    @section IMPORTACIÓN DE FUENTES  
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ==========================================================================  
+/** ==========================================================================  
    @section RESET Y BASE  
    ========================================================================== */
 * {
@@ -34,31 +34,31 @@ body {
   min-height: 100vh;
 }
 
-/* ==========================================================================  
+/** ==========================================================================  
    @section HEADER  
    ========================================================================== */
 header {
-  /* Fondo liso profesional, puedes ajustar colores */
+  /** Fondo liso profesional, puedes ajustar colores */
   background: linear-gradient(to right, #000080, #027DB2, #04A9C1);
   color: #fff;
   box-shadow: 0 2px 10px rgba(0,0,0,0.15);
   position: relative;
-  padding-bottom: 1rem; /* Reduce espacios vacíos */
+  padding-bottom: 1rem; /** Reduce espacios vacíos */
 }
 
-/* Contenedor nav */
+/** Contenedor nav */
 .menu-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem 5rem;
   gap: 17rem;
-  flex-wrap: nowrap; /* Nav siempre en la misma línea */
+  flex-wrap: nowrap; /** Nav siempre en la misma línea */
   max-width: 150rem;
   margin: 0 auto;
 }
 
-/* LOGO + NOMBRE */
+/** LOGO + NOMBRE */
 .logo {
   display: flex;
   align-items: center;
@@ -92,7 +92,7 @@ header {
   transform: translateY(-2px);
 }
 
-/* NAVEGACIÓN */
+/** NAVEGACIÓN */
 .navegacion {
   flex-grow: 1;
   display: flex;
@@ -137,7 +137,7 @@ header {
   transform: translateY(-2px);
 }
 
-/* BOTONES HEADER */
+/** BOTONES HEADER */
 .botones-header {
   display: flex;
   gap: 5rem;
@@ -147,7 +147,7 @@ header {
   align-items: center;
 }
 
-/* Animación de color uniforme para botones */
+/** Animación de color uniforme para botones */
 @keyframes botonColor {
   0% { background: linear-gradient(to right, #026BA5, #03BEE1); }
   50% { background: linear-gradient(to right, #03BEE1, #04A9C1); }
@@ -188,7 +188,7 @@ header {
   transform: scale(1.05);
 }
 
-/* ==========================================================================  
+/** ==========================================================================  
    @section HERO / BANNER (SIN IMAGEN)  
    ========================================================================== */
 .contenedor-header {
@@ -230,7 +230,7 @@ header {
   line-height: 1.6;
 }
 
-/* ==========================================================================  
+/** ==========================================================================  
    @section MAIN  
    ========================================================================== */
 main {
@@ -345,7 +345,7 @@ main {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* ==========================================================================  
+/** ==========================================================================  
    @section FOOTER RESPONSIVO  
    ========================================================================== */
 footer {
@@ -435,7 +435,7 @@ footer a:hover {
   position: relative;
 }
 
-/* ==========================================================================  
+/** ==========================================================================  
    @section ANIMACIONES  
    ========================================================================== */
 @keyframes fadeInDown {
@@ -453,7 +453,7 @@ footer a:hover {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* ==========================================================================  
+/** ==========================================================================  
    @section RESPONSIVIDAD  
    ========================================================================== */
 @media (max-width: 992px) {
@@ -564,7 +564,7 @@ footer a:hover {
   .contenedor-footer-2 { font-size: 1.3rem; }
 }
 
-/* Ajustes header y botones para móvil */
+/** Ajustes header y botones para móvil */
 @media (max-width: 992px) {
   .menu-nav {
     flex-direction: column;

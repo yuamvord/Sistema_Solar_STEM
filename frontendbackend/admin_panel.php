@@ -8,9 +8,10 @@
  * @date Octubre 2025s
  */
 
-require_once "conexion.php"; // Asegúrate que este archivo crea la variable $conexion
+ /** @brief Se realiza la conexión a la base de datos */
+require_once "conexion.php"; 
 
-// --- Cambiar estado de aprobado a 1 ---
+/** @brief Realiza el cambio al valor 1 para que el usuario este aprobado */
 if (isset($_GET['Aprobar'])) {
     $id = $_GET['Aprobar'];
     $sql = "UPDATE users SET Aprobado = 1 WHERE id = ?";
@@ -19,9 +20,9 @@ if (isset($_GET['Aprobar'])) {
     $stmt->execute();
     echo "<script>alert('Usuario aprobado correctamente'); window.location='admin_panel.php';</script>";
     exit;
-}
+} 
 
-// --- Cambiar estado de aprobado a 0 (bloquear) ---
+/** @brief Realiza el cambio al valor 0 para que el usuario este bloqueado */
 if (isset($_GET['Bloquear'])) {
     $id = $_GET['Bloquear'];
     $sql = "UPDATE users SET Aprobado = 0 WHERE id = ?";
@@ -32,7 +33,7 @@ if (isset($_GET['Bloquear'])) {
     exit;
 }
 
-// --- Obtener todos los usuarios ---
+
 $result = $conexion->query("SELECT id, Nombre_Completo, Username, Email, Aprobado FROM users ORDER BY id DESC");
 ?>
 
@@ -41,6 +42,7 @@ $result = $conexion->query("SELECT id, Nombre_Completo, Username, Email, Aprobad
 <head>
     <meta charset="UTF-8">
     <title>Panel de Administración</title>
+    <!--! @section Estilos de la tabla del panel de control --->
     <style>
         body { font-family: Arial; background: #f5f5f5; }
         table { width: 90%; margin: 30px auto; border-collapse: collapse; background: #fff; }
@@ -55,7 +57,7 @@ $result = $conexion->query("SELECT id, Nombre_Completo, Username, Email, Aprobad
 <body>
 
 <h2 style="text-align:center;">Panel de Administración - Aprobación de Usuarios</h2>
-
+<!--! Imprime la tabla con los usuario registrados -->
 <table>
     <tr>
         <th>ID</th>

@@ -10,7 +10,7 @@
  *   - José Daniel Real García 
  *   - Ariel Yuam Vides Ordoñez
  * @date 2025-10-15
- */
+ */ 
 
 /**
  * @section session_start Manejo de sesión
@@ -26,12 +26,59 @@ if (isset($_SESSION['Username'])) {
     header("Location: ../index.php"); ///< Redirección a la página principal.
 }
 ?>
+<?php if (isset($_GET['reset']) && $_GET['reset'] == 'success'): ?>
+<div id="alert" style="
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+">
+    Se ha enviado un enlace a tu correo.
+</div>
+
+<script>
+    // Desaparece después de 4 segundos
+    setTimeout(() => {
+        const alertBox = document.getElementById('alert');
+        if (alertBox) alertBox.style.display = 'none';
+    }, 4000);
+</script>
+<?php endif; ?>
+
+<?php if (isset($_GET['update']) && $_GET['update'] == 'success'): ?>
+<div id="alert2" style="
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+">
+    Contraseña cambiada exitosamente
+</div>
+
+<script>
+    // Desaparece después de 4 segundos
+    setTimeout(() => {
+        const alertBox2 = document.getElementById('alert2');
+        if (alertBox2) alertBox2.style.display = 'none';
+    }, 4000);
+</script>
+<?php endif; ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- 
+    <!--! 
         @section head_config Configuración del documento HTML
         Define el conjunto de caracteres, el viewport para diseño responsivo,
         el título de la página y los enlaces a las hojas de estilo y al ícono del sitio.
@@ -39,20 +86,20 @@ if (isset($_SESSION['Username'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="normalize.css"> <!-- Normaliza estilos por defecto del navegador -->
-    <link rel="stylesheet" href="estilo_login.css"> <!-- Estilos personalizados para el login -->
-    <link rel="icon" href="img/DreamTeam.ico" type="image/x-icon"> <!-- Ícono del sitio -->
+    <link rel="stylesheet" href="normalize.css"> <!--! Normaliza estilos por defecto del navegador -->
+    <link rel="stylesheet" href="estilo_login.css"> <!--! Estilos personalizados para el login -->
+    <link rel="icon" href="img/DreamTeam.ico" type="image/x-icon"> <!--! Ícono del sitio -->
 </head>
 
 <div class="container">
-    <!-- =======================================================
+    <!--! =======================================================
          FORMULARIO DE INICIO DE SESIÓN
          ======================================================= -->
     <div class="container-form">
         <form action="login_process.php" method="POST" class="sign-in">
             <h2>Iniciar Sesión</h2>
 
-            <!-- Mensajes dinámicos -->
+            <!--! Mensajes dinámicos -->
             <?php if (isset($_GET['error'])): ?>
                 <p style="color:red;"><?php echo htmlspecialchars($_GET['error']); ?></p>
             <?php endif; ?>
@@ -60,7 +107,7 @@ if (isset($_SESSION['Username'])) {
                 <p style="color:green;"><?php echo htmlspecialchars($_GET['success']); ?></p>
             <?php endif; ?>
 
-            <!-- Redes sociales -->
+            <!--! Redes sociales -->
             <div class="social-networks">
                 <a href="https://github.com/yuamvord/Sistema_Solar_STEM"><ion-icon name="logo-github"></ion-icon></a>
                 <a href="https://www.instagram.com/dreamteamsystems"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -69,7 +116,7 @@ if (isset($_SESSION['Username'])) {
 
             <span>Utilice su correo electrónico y contraseña</span>
 
-            <!-- Inputs -->
+            <!--! Inputs -->
             <div class="container-input">
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="email" placeholder="Email" name="identifier" required>
@@ -88,14 +135,14 @@ if (isset($_SESSION['Username'])) {
         </form>
     </div>
 
-    <!-- =======================================================
+    <!--! =======================================================
          FORMULARIO DE REGISTRO
          ======================================================= -->
     <div class="container-form">
         <form action="register_process.php" method="POST" class="sign-up">
             <h2>Registrarse</h2>
 
-            <!-- Redes sociales -->
+            <!--! Redes sociales -->
             <div class="social-networks">
                 <a href="https://github.com/yuamvord/Sistema_Solar_STEM"><ion-icon name="logo-github"></ion-icon></a>
                 <a href="https://www.instagram.com/dreamteamsystems"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -104,7 +151,7 @@ if (isset($_SESSION['Username'])) {
 
             <span>Use su correo electrónico para registrarse</span>
 
-            <!-- Inputs -->
+            <!--! Inputs -->
             <div class="container-input">
                 <ion-icon name="person-outline"></ion-icon>
                 <input type="text" placeholder="Nombre Completo" name="Nombre_Completo" required>
@@ -136,7 +183,7 @@ if (isset($_SESSION['Username'])) {
         </form>
     </div>
 
-    <!-- =======================================================
+    <!--! =======================================================
          PANEL DE BIENVENIDA CON BOTONES
          ======================================================= -->
     <div class="container-welcome">
@@ -153,11 +200,11 @@ if (isset($_SESSION['Username'])) {
     </div>
 </div>
 
-    <!-- 
+    <!--! 
         @section scripts Inclusión de scripts
         Incluye los scripts necesarios para la funcionalidad del formulario y los iconos.
     -->
-    <script src="script_login.js"></script> <!-- Script principal que maneja el comportamiento dinámico -->
+    <script src="script_login.js"></script> <!--! Script principal que maneja el comportamiento dinámico -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="login.js"></script>

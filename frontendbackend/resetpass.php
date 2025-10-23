@@ -21,14 +21,14 @@
 </head>
 <body>
     <div class="container">
-    <!-- =======================================================
+    <!--! =======================================================
          FORMULARIO DE OLVIDÉ MI CONTRASEÑA
          ======================================================= -->
     <div class="container-form forgot-form">
-        <form action="forgot_password_process.php" method="POST" class="forgot-password">
+        <form action="send_reset.php" method="POST" class="forgot-password">
             <h2>Recuperar Contraseña</h2>
 
-            <!-- Mensajes dinámicos -->
+            <!--! Mensajes dinámicos -->
             <?php if (isset($_GET['error'])): ?>
                 <p style="color:red;"><?php echo htmlspecialchars($_GET['error']); ?></p>
             <?php endif; ?>
@@ -36,7 +36,7 @@
                 <p style="color:green;"><?php echo htmlspecialchars($_GET['success']); ?></p>
             <?php endif; ?>
 
-            <!-- Redes sociales (opcional para contacto) -->
+            <!--! Redes sociales (opcional para contacto) -->
             <div class="social-networks">
                 <a href="https://github.com/yuamvord/Sistema_Solar_STEM"><ion-icon name="logo-github"></ion-icon></a>
                 <a href="https://www.instagram.com/dreamteamsystems"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -45,18 +45,18 @@
 
             <span>Ingrese su correo electrónico para restablecer la contraseña</span>
 
-            <!-- Input de correo -->
+            <!--! Input de correo -->
             <div class="container-input">
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="email" placeholder="Correo electrónico" name="email" required>
             </div>
 
-            <!-- Botones -->
+            <!--! Botones -->
             <div class="button-group">
                 <button type="submit" class="button" id="btn-forgot">ENVIAR ENLACE</button>
             </div>
 
-            <!-- Enlace de regreso -->
+            <!--! Enlace de regreso -->
             <a href="Login.php" class="back-login">Regresar al inicio de sesión</a>
         </form>
     </div>

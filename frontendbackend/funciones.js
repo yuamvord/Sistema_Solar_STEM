@@ -15,7 +15,7 @@
  * ==========================================================================
  */
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Menú lateral
    @detail  Control de apertura y cierre del menú tipo "hamburger"
    ========================================================================== */
@@ -31,7 +31,7 @@ function closeInfo() {
   document.getElementById('infoBox').style.display = 'none';
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Datos de planetas
    @detail  Array de objetos con información completa de cada planeta,
             incluyendo título, texto descriptivo y ruta de imagen.
@@ -219,7 +219,7 @@ img:'img/sol.png'},
   img:'img/pluton.png'},
 ];
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Referencias DOM
    @detail  Referencias a elementos del DOM necesarios para carrusel
             y panel de detalle
@@ -232,7 +232,7 @@ const detailTitle = document.getElementById('detail-title');
 const detailText = document.getElementById('detail-text');
 const closeBtn = document.getElementById('close');
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Variables de estado
    @detail  Variables para control del scroll automático y offset del carrusel
    ========================================================================== */
@@ -241,7 +241,7 @@ let offset = 0;
 const scrollSpeed = 0.45; 
 let rafId = null;
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Funciones para creación de elementos
    ========================================================================== */
 /**
@@ -289,7 +289,7 @@ function renderList(container, data){
   data.forEach(it => container.appendChild(createPlanetBox(it)));
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Renderización del carrusel
    ========================================================================== */
 function renderLoopList(){
@@ -327,7 +327,7 @@ function animateLoop(){
   rafId = requestAnimationFrame(animateLoop);
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Panel de detalle
    ========================================================================== */
 function showDetail(item){
@@ -360,7 +360,7 @@ function closeDetail(){
 closeBtn.addEventListener('click', closeDetail);
 document.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') closeDetail(); });
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Scroll manual
    ========================================================================== */
 function onWheelToManual(){
@@ -373,7 +373,7 @@ function enableWheelToManual(){
   carouselViewport.addEventListener('wheel', onWheelToManual, { passive: true, once: true });
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Click fuera del carrusel para volver al loop
    ========================================================================== */
 document.addEventListener('click', (e) => {
@@ -382,7 +382,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Inicialización
    ========================================================================== */
 renderLoopList();

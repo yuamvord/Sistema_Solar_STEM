@@ -1,4 +1,4 @@
-/**
+/***
  * @file estilo.css
  * @author José Daniel Real García
  * @brief Estilos principales para la interfaz interactiva del Sistema Solar.
@@ -8,20 +8,20 @@
  * @date 2025-10-15
  */
 
-/* ==========================================================================
+/** ==========================================================================
    @section Fonts
    ========================================================================== */
-/**
+/***
  * @brief Importación de la fuente principal "Montserrat" desde Google Fonts.
  */
  
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ==========================================================================
+/** ==========================================================================
    @section Variables CSS (Paleta y Layout)
    ========================================================================== */
 :root{
-  /* Paleta de colores */
+  /** Paleta de colores */
   --accent-1: #027DB2;
   --accent-2: #03BEE1;
   --accent-3: #069DC8;
@@ -30,7 +30,7 @@
   --panel-bg: rgba(255,255,255,0.06);
   --muted: rgba(255,255,255,0.12);
 
-  /* Tamaños de layout */
+  /** Tamaños de layout */
   --left-width: 50vw;
   --right-width: calc(100vw - var(--left-width));
   --carousel-height: 64vh;
@@ -38,7 +38,7 @@
   --gap: 12px;
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section Reset y Base
    ========================================================================== */
 *{ box-sizing:border-box; }
@@ -54,7 +54,7 @@ html,body{
   -moz-osx-font-smoothing:grayscale;
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section HAMBURGER (Menú móvil)
    ========================================================================== */
 .hamburger {
@@ -93,7 +93,7 @@ html,body{
 .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(4px, -6px); }
 .hamburger:focus { outline: 2px dashed rgba(3,190,225,0.25); outline-offset: 3px; }
 
-/* ==========================================================================
+/** ==========================================================================
    @section SIDE MENU
    ========================================================================== */
 .side-menu {
@@ -150,7 +150,7 @@ html,body{
   border-bottom-left-radius: 6px;
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section HEADER / TITLE
    ========================================================================== */
 h1 { 
@@ -161,7 +161,7 @@ h1 {
   letter-spacing: .4px; 
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section SOLAR SYSTEM (DERECHA)
    ========================================================================== */
 .solarsystem {
@@ -193,7 +193,7 @@ h1 {
   pointer-events: auto;
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section ORBITS AND PLANETS
    ========================================================================== */
 .orbit {
@@ -245,10 +245,10 @@ h1 {
 
 .solarsystem, .sun, .orbit > .planet { pointer-events: auto; }
 
-/* ==========================================================================
+/** ==========================================================================
    @section LEFT HALF / CAROUSEL
    ========================================================================== */
-/**
+/***
  * @brief Contenedor principal del lado izquierdo donde se ubica el carousel.
  */
 .left-half{
@@ -264,7 +264,7 @@ h1 {
   overflow: visible;
 }
 
-/**
+/***
  * @brief Vista del carrusel que contiene la lista de planetas.
  */
 .carousel-viewport{
@@ -279,7 +279,7 @@ h1 {
   border: 1px solid rgba(255,255,255,0.03);
 }
 
-/**
+/***
  * @brief Lista de planetas dentro del carousel.
  */
 .carousel-list{ 
@@ -291,7 +291,7 @@ h1 {
   will-change:transform; 
 }
 
-/**
+/***
  * @brief Caja individual de cada planeta en el carousel.
  */
 .planet-box{ 
@@ -313,7 +313,7 @@ h1 {
   background: rgba(3,190,225,0.03); 
 }
 
-/**
+/***
  * @brief Miniatura o "thumb" del planeta.
  */
 .thumb{ 
@@ -337,7 +337,7 @@ h1 {
   display:block; 
 }
 
-/**
+/***
  * @brief Información textual de cada planeta dentro de la caja.
  */
 .info{ 
@@ -365,7 +365,7 @@ h1 {
   color:var(--accent-2); 
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section DETAIL PANEL (Panel de información del planeta)
    ========================================================================== */
 .detail-panel { 
@@ -399,7 +399,7 @@ h1 {
   pointer-events:auto; 
 }
 
-/**
+/***
  * @brief Contenedor izquierdo dentro del panel de detalle, muestra imagen y título.
  */
 .detail-left{ 
@@ -412,7 +412,7 @@ h1 {
   flex-shrink:0; 
 }
 
-/**
+/***
  * @brief Contenedor derecho, texto descriptivo del planeta.
  */
 .detail-right {
@@ -426,7 +426,7 @@ h1 {
   max-height: 95%;
 }
 
-/**
+/***
  * @brief Imagen grande circular del planeta en el panel.
  */
 .big-img{ 
@@ -447,7 +447,7 @@ h1 {
   border-radius:50%; 
 }
 
-/**
+/***
  * @brief Botón de cerrar el panel de detalle.
  */
 .close-btn{ 
@@ -471,13 +471,13 @@ h1 {
   color:white; 
 }
 
-/* ==========================================================================
+/** ==========================================================================
    @section Scrollbars (Panel detalle)
    ========================================================================== */
 .detail-right::-webkit-scrollbar{ width:8px; }
 .detail-right::-webkit-scrollbar-thumb{ background: rgba(255,255,255,0.06); border-radius:4px; }
 
-/* ==========================================================================
+/** ==========================================================================
    @section MEDIA QUERIES (Responsive)
    ========================================================================== */
 @media (max-width:1400px){

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Control Solar</title>
+  <script type="module">
+    // Importa los módulos de Firebase (versión moderna)
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
+
+    // ⚙️ Configura tu Firebase aquí (reemplaza con tus datos reales)
+    const firebaseConfig = {
+      apiKey: "TU_API_KEY",
+      authDomain: "dreamteamsolarstem.firebaseapp.com",
+      databaseURL: "https://dreamteamsolarstem-default-rtdb.firebaseio.com",
+      projectId: "dreamteamsolarstem",
+      storageBucket: "dreamteamsolarstem.appspot.com",
+      messagingSenderId: "xxxxxxxxxx",
+      appId: "1:xxxxxxxxxx:web:xxxxxxxxxx"
+    };
+
+    // Inicializa Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    // 📤 Funciones para enviar comandos
+    function sendCommand(type, value) {
+      set(ref(db, 'control/' + type), value)
+        .then(() => console.log(`✅ ${type} => ${value}`))
+        .catch((e) => console.error('❌ Error:', e));
+    }
+
+    // Botones
+    window.ledOn = () => sendCommand('led', 'on');
+    window.ledOff = () => sendCommand('led', 'off');
+    window.motorRight = () => sendCommand('motor', 'right');
+    window.motorLeft = () => sendCommand('motor', 'left');
+    window.motorStop = () => sendCommand('motor', 'stop');
+  </script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #101820;
+      color: white;
+      text-align: center;
+      padding: 2em;
+    }
+    button {
+      background: #00bcd4;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 8px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover { background: #0097a7; }
+  </style>
+</head>
+
+<body>
+  <h1>🌞 Panel de Control - Sistema Solar</h1>
+  <h2>LEDs</h2>
+  <button onclick="ledOn()">Encender LED</button>
+  <button onclick="ledOff()">Apagar LED</button>
+
+  <h2>Motor</h2>
+  <button onclick="motorRight()">Girar Derecha</button>
+  <button onclick="motorLeft()">Girar Izquierda</button>
+  <button onclick="motorStop()">Detener Motor</button>
+</body>
+</html>

@@ -8,6 +8,8 @@
  * @date Octubre 2025
  */
 
+
+/** @brief Realiza el cierra de sesión */
 session_start();
 $_SESSION = [];
 session_unset();

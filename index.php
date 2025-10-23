@@ -86,7 +86,7 @@ if ((int)$aprobado === 0) {
     </section>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
+  <!--! CONTENIDO PRINCIPAL -->
   <main>
     <section class="seccion-principal">
       <h2>Conoce el Sistema Solar</h2>
@@ -139,7 +139,7 @@ if ((int)$aprobado === 0) {
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!--! FOOTER -->
   <footer>
     <div class="contenedor-footer">
       <div class="footer-logo">
@@ -186,12 +186,9 @@ if ((int)$aprobado === 0) {
 </body>
 
 
-<<<<<<< HEAD
-=======
 
     <script src="frontendbackend/verificar_sesion.js"></script>
 
   </body>
->>>>>>> af85817939e1b2cbffe77c5fece26dfb87d32d19
 </html>
 

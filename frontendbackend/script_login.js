@@ -14,12 +14,12 @@
  * ==========================================================================
  */
 
-/* ==========================================================================
+/** ==========================================================================
    @section: Esperar a que el DOM esté completamente cargado
    ========================================================================== */
 document.addEventListener("DOMContentLoaded", function() {
 
-  /* ==========================================================================
+  /** ==========================================================================
      @section: Selección de elementos principales
      @detail  Elementos del contenedor y botones que controlan la animación
      ========================================================================== */
@@ -27,21 +27,21 @@ document.addEventListener("DOMContentLoaded", function() {
   const btnSignIn = document.getElementById("btn-sign-in"); // Botón para cambiar a Sign In
   const btnSignUp = document.getElementById("btn-sign-up"); // Botón para cambiar a Sign Up
 
-  /* ==========================================================================
+  /** ==========================================================================
      @section: Botones internos de Sign In
      @detail  Botones dentro del panel de Sign In
      ========================================================================== */
   const btnLoginSignIn = document.getElementById("btn-login-signin"); // Botón de login Sign In
   const btnHomeSignIn = document.getElementById("btn-home-signin");   // Botón de Home Sign In
 
-  /* ==========================================================================
+  /** ==========================================================================
      @section: Botones internos de Sign Up
      @detail  Botones dentro del panel de Sign Up
      ========================================================================== */
   const btnLoginSignUp = document.getElementById("btn-login-signup"); // Botón de login Sign Up
   const btnHomeSignUp = document.getElementById("btn-home-signup");   // Botón de Home Sign Up
 
-  /* ==========================================================================
+  /** ==========================================================================
      @section: Manejo de cambios de panel (Animaciones)
      @detail  Se agregan o remueven clases para activar animaciones de transición
      ========================================================================== */
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
       container.classList.add("toggle");    // Muestra panel Sign Up
     });
 
-  /* ==========================================================================
+  /** ==========================================================================
      @section: Redirecciones de botones
      @detail  Redirige a "index.php" según el botón presionado
      ========================================================================== */
@@ -71,11 +71,11 @@ document.addEventListener("DOMContentLoaded", function() {
       window.location.href = "index.php";   // Redirige al home
     });
 
-  /* ==========================================================================
+  /** ==========================================================================
      @section: Redirecciones comentadas (Login buttons)
      @detail  Botones de login que actualmente están deshabilitados
      ========================================================================== */
-  /*
+  /**
   if (btnLoginSignIn)
     btnLoginSignIn.addEventListener("click", (e) => {
       e.preventDefault();
